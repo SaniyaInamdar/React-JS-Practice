@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+  /* Center everything nicely */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+
+  center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+  }
+
+  /* Buttons styling */
+  button {
+    background-color: #ff6f61; /* nice e-commerce orange */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #ff3b2e;
+    transform: scale(1.05);
+  }
+
+  /* Image styling */
+  #imagechange {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+
+  #imagechange:hover {
+    transform: scale(1.05);
+  }
+
+  /* Responsive for mobile */
+  @media screen and (max-width: 600px) {
+    #imagechange {
+      width: 80%;
+      height: auto;
+    }
+
+    button {
+      width: 45%;
+      margin: 5px;
+      padding: 10px;
+      font-size: 14px;
+    }
+  }
+</style>
+
+</head>
+<body>
+  <script src="day06.js"></script>
+<center>
+  <button onclick="previousimg()">Privious</button>
+
+  <img src="img1.jpg" alt="image 1" id="imagechange">
+
+  <button onclick="nextimg()">Next</button>
+</center>
+</body>
+</html>
