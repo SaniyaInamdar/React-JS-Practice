@@ -5,21 +5,21 @@ const MyCounterApp = () => {
   var [count,setCount]=useState(0)
 
   function increament(){
-   setCount(count+1)
+   setCount(count=count +1)
   }
 
   function decreament(){
-    setCount(count-1)
+    setCount(count=count-1)
   }
 
    function reset(){
-    setCount(count=0)
+    setCount(count = 0)
   }
 
   return (
     <div>
       <h1>My Counter App</h1>
-      <h3>{count}</h3>
+      <h4>{count}</h4>
       <button onClick={increament}>increament</button>
       <button onClick={decreament}>decrement</button>
       <button onClick={reset}>reset</button>
