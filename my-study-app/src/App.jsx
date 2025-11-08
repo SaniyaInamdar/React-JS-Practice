@@ -10,6 +10,9 @@ import EvenAndOddCheckerApp from './Components/EvenAndOddCheckerApp'
 import PositiveAndNegetiveCheckerApp from './Components/PositiveAndNegetiveCheckerApp'
 import AgeEligibilityCheckerApp from './Components/AgeEligibilityCheckerApp'
 import GreetingApp from './Components/GreetingApp'
+import SquareAndCubeFinderApp from './Components/SquareAndCubeFinderApp'
+import SimpleInterestCalculator from './Components/SimpleInterestCalculator'
+import NameLengthChecker from './Components/NameLengthChecker'
 
 function App() {
 
@@ -21,7 +24,10 @@ function App() {
     {/* <EvenAndOddCheckerApp/> */}
     {/* <PositiveAndNegetiveCheckerApp/> */}
     {/* <AgeEligibilityCheckerApp/> */}
-    <GreetingApp/>
+    {/* <GreetingApp/> */}
+    {/* <SquareAndCubeFinderApp/> */}
+    {/* <SimpleInterestCalculator/> */}
+    <NameLengthChecker/>
     </>
   )
 }
