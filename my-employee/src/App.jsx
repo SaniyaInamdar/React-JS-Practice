@@ -11,6 +11,7 @@ import MapComponent from './Components/MapComponent'
 import FetchDataFromApi from './Components/FetchDataFromAPi'
 import Greeting from './Components/GreetingProps'
 import GreetingProps from './Components/GreetingProps'
+import ShowEmployees from './Components/ShowEmployees'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -22,7 +23,7 @@ function App() {
     <h1>Hello This is my first react app</h1>
    <CounterExample/> */}
    
-   <TableComponent/>
+   <ShowEmployees/>
   <GreetingProps name="saniya"/>
 
      </>
