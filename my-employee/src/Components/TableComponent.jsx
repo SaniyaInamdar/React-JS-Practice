@@ -1,4 +1,20 @@
+import { useEffect, useState } from "react"
+import { getAllEmployees } from "./EmployeeService"
+
 function TableComponent(){
+
+  const[Employees, setAllEmployees]=useState([])
+
+  useEffect(()=>{
+    loadEmployees();
+  },[]);
+
+  const loadEmployees=()=>{
+    getAllEmployees()
+    .then((resp) => setAllEmployees(resp.data))
+    .catch((error) => console.log(error));
+  }
+
   return(
 
     <>
@@ -15,13 +31,15 @@ function TableComponent(){
            </tr>
         </thead>
         <tbody>
-        <tr>
-          <td>101</td>
-          <td>Saniya</td>
-          <td>saniya@gmail.com</td>
-          <td>Java Developer</td>
-          <td>580000</td>
+          { Employees.map((emp) =>
+        <tr key={emp.id} >
+          <td>{emp.id}</td>
+          <td>{emp.name}</td>
+          <td>{emp.email}</td>
+          <td>{emp.salary}</td>
+          <td>{emp.department}</td>
         </tr>
+          )}
         </tbody>
       </table>
       </center>

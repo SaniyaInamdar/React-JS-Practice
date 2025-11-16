@@ -9,18 +9,24 @@ import TableComponent from './Components/TableComponent'
 import CounterExample from './Components/CounterExample'
 import MapComponent from './Components/MapComponent'
 import FetchDataFromApi from './Components/FetchDataFromAPi'
+import Greeting from './Components/GreetingProps'
+import GreetingProps from './Components/GreetingProps'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
- <FetchDataFromApi/>
+ {/* <FetchDataFromApi/>
    <MapComponent/>
     <h1>Hello This is my first react app</h1>
-   <CounterExample/>
+   <CounterExample/> */}
    
+   <TableComponent/>
+  <GreetingProps name="saniya"/>
+
      </>
+
 
 
 
