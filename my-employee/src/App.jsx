@@ -12,6 +12,7 @@ import FetchDataFromApi from './Components/FetchDataFromAPi'
 import Greeting from './Components/GreetingProps'
 import GreetingProps from './Components/GreetingProps'
 import ShowEmployees from './Components/ShowEmployees'
+import AddEmployee from './Components/AddEmployee'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -22,8 +23,10 @@ function App() {
    <MapComponent/>
     <h1>Hello This is my first react app</h1>
    <CounterExample/> */}
-   
+   <AddEmployee/>
+
    <ShowEmployees/>
+   
   <GreetingProps name="saniya"/>
 
      </>
