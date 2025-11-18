@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./MapComponent.css";
+
 function FetchDataFromApi(){
 
    const [customer, setCustomer] = useState([]);

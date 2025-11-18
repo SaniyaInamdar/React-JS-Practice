@@ -1,4 +1,4 @@
-import NavbarComponent from "./NavbarComponent"
+import NavbarComponent from "./Components/NavbarComponent"
 
 function About(){
   return( 

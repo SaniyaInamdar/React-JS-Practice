@@ -1,4 +1,4 @@
-import "./MapComponent.css";
+
 function MapComponent() {
 
   const employee=[
